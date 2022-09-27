@@ -38,7 +38,7 @@ const EducationItem = ({ id, educationItem, onChange, onRemove }) => {
           <label>Major</label>
           <input
             type="text"
-            name="degree"
+            name="major"
             placeholder="Computer Science"
             value={educationItem.major}
             onChange={(e) => onChange(e, id)}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ResumeForm from "./Resume/Form/ResumeForm";
-import ResumePreview from "./Resume/ResumePreview";
+import ResumePreview from "./Resume/ResumePreview/ResumePreview";
 import emptyResume from "./Resume/emptyResume";
 import uniqid from "uniqid";
 
@@ -125,7 +125,7 @@ const Main = () => {
         onRemoveExperience={handleRemoveExperience}
         onRemoveEducation={handleRemoveEducation}
       />
-      <ResumePreview />
+      <ResumePreview resume={resume} />
     </div>
   );
 };

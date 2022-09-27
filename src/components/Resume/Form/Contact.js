@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = ({ contactInfo }) => {
+const Contact = ({ contactInfo, onChange }) => {
   return (
     <div className="form-container">
       <div className="form-header">
@@ -14,6 +14,7 @@ const Contact = ({ contactInfo }) => {
             name="location"
             placeholder="Grand Rapids, MI"
             value={contactInfo.location}
+            onChange={(e) => onChange(e)}
           />
         </div>
         <div className="form-control">
@@ -23,6 +24,7 @@ const Contact = ({ contactInfo }) => {
             name="phoneNumber"
             placeholder="269.760.6524"
             value={contactInfo.phoneNumber}
+            onChange={(e) => onChange(e)}
           />
         </div>
         <div className="form-control">
@@ -32,6 +34,7 @@ const Contact = ({ contactInfo }) => {
             name="email"
             placeholder="tmathiak@gmail.com"
             value={contactInfo.email}
+            onChange={(e) => onChange(e)}
           />
         </div>
         <div className="form-control">
@@ -41,6 +44,7 @@ const Contact = ({ contactInfo }) => {
             name="website"
             placeholder="www.trevormathiak.dev"
             value={contactInfo.website}
+            onChange={(e) => onChange(e)}
           />
         </div>
         <div className="form-control">
@@ -50,6 +54,7 @@ const Contact = ({ contactInfo }) => {
             name="linkedin"
             placeholder="https://www.linkedin.com/in/trevormathiak"
             value={contactInfo.linkedin}
+            onChange={(e) => onChange(e)}
           />
         </div>
         <div className="form-control">
@@ -59,6 +64,7 @@ const Contact = ({ contactInfo }) => {
             name="github"
             placeholder="https://github.com/trroev"
             value={contactInfo.github}
+            onChange={(e) => onChange(e)}
           />
         </div>
       </form>
