@@ -1,4 +1,13 @@
 import React from "react";
+import { GoLocation } from "react-icons/go";
+import {
+  FaPhone,
+  FaConnectdevelop,
+  FaLinkedinIn,
+  FaGithub,
+  FaSquareFull,
+} from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Sidebar = ({ personalInfo, contactInfo }) => {
   const { firstName, lastName, jobTitle } = personalInfo;
@@ -9,13 +18,66 @@ const Sidebar = ({ personalInfo, contactInfo }) => {
       <h1>
         {firstName} {lastName}
       </h1>
-      <h5>{jobTitle}</h5>
-      <p>{location}</p>
-      <p>{phoneNumber}</p>
-      <p>{email}</p>
-      <p>{website}</p>
-      <p>{linkedin}</p>
-      <p>{github}</p>
+      <h4>
+        <FaSquareFull
+          style={{
+            fill: "#d67215",
+            marginRight: "0.5rem",
+            fontSize: "0.5rem",
+          }}
+        />
+        {jobTitle}
+      </h4>
+      <div className="contact-info">
+        <p>
+          <GoLocation
+            style={{
+              marginRight: "0.5rem",
+            }}
+          />
+          {location}
+        </p>
+        <p>
+          <FaPhone
+            style={{
+              marginRight: "0.5rem",
+            }}
+          />
+          {phoneNumber}
+        </p>
+        <p>
+          <MdOutlineEmail
+            style={{
+              marginRight: "0.5rem",
+            }}
+          />
+          {email}
+        </p>
+        <p>
+          <FaConnectdevelop
+            style={{
+              marginRight: "0.5rem",
+            }}
+          />
+          {website}
+        </p>
+        <p>
+          <FaLinkedinIn
+            style={{
+              marginRight: "0.5rem",
+            }}
+          />
+          {linkedin}
+        </p>
+        <p>
+          <FaGithub
+            style={{
+              marginRight: "0.5rem",
+            }}
+          />
+          {github}
+        </p>
+      </div>
     </div>
   );
 };

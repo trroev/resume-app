@@ -18,7 +18,9 @@ const Experience = ({ id, experienceInfo, onChange, onAdd, onRemove }) => {
         <h2>Experience</h2>
       </div>
       {experienceItems}
-      <button onClick={() => onAdd(id)}>Add</button>
+      <button className="add-button" onClick={() => onAdd(id)}>
+        Add
+      </button>
     </div>
   );
 };

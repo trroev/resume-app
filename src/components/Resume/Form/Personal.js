@@ -12,7 +12,7 @@ const Personal = ({ personalInfo, onChange }) => {
           <input
             type="text"
             name="firstName"
-            placeholder="Trevor"
+            placeholder="First Name"
             value={personalInfo.firstName}
             onChange={(e) => onChange(e)}
           />
@@ -22,7 +22,7 @@ const Personal = ({ personalInfo, onChange }) => {
           <input
             type="text"
             name="lastName"
-            placeholder="Mathiak"
+            placeholder="Last Name"
             value={personalInfo.lastName}
             onChange={(e) => onChange(e)}
           />
@@ -32,7 +32,7 @@ const Personal = ({ personalInfo, onChange }) => {
           <input
             type="text"
             name="jobTitle"
-            placeholder="Software Engineer"
+            placeholder="Job Title"
             value={personalInfo.jobTitle}
             onChange={(e) => onChange(e)}
           />

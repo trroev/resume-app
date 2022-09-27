@@ -18,7 +18,9 @@ const Education = ({ id, educationInfo, onChange, onAdd, onRemove }) => {
         <h2>Education</h2>
       </div>
       {educationItems}
-      <button onClick={() => onAdd(id)}>Add</button>
+      <button className="add-button" onClick={() => onAdd(id)}>
+        Add
+      </button>
     </div>
   );
 };

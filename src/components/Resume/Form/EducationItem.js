@@ -9,7 +9,7 @@ const EducationItem = ({ id, educationItem, onChange, onRemove }) => {
           <input
             type="text"
             name="school"
-            placeholder="Michigan State University"
+            placeholder="University Name"
             value={educationItem.school}
             onChange={(e) => onChange(e, id)}
           />
@@ -19,7 +19,7 @@ const EducationItem = ({ id, educationItem, onChange, onRemove }) => {
           <input
             type="text"
             name="location"
-            placeholder="East Lansing, MI"
+            placeholder="City, State"
             value={educationItem.location}
             onChange={(e) => onChange(e, id)}
           />
@@ -29,7 +29,7 @@ const EducationItem = ({ id, educationItem, onChange, onRemove }) => {
           <input
             type="text"
             name="degree"
-            placeholder="Bachelor's"
+            placeholder="Degree"
             value={educationItem.degree}
             onChange={(e) => onChange(e, id)}
           />
@@ -39,7 +39,7 @@ const EducationItem = ({ id, educationItem, onChange, onRemove }) => {
           <input
             type="text"
             name="major"
-            placeholder="Computer Science"
+            placeholder="Major"
             value={educationItem.major}
             onChange={(e) => onChange(e, id)}
           />
@@ -49,7 +49,7 @@ const EducationItem = ({ id, educationItem, onChange, onRemove }) => {
           <input
             type="text"
             name="startDate"
-            placeholder="2005"
+            placeholder="Year"
             value={educationItem.startDate}
             onChange={(e) => onChange(e, id)}
           />
@@ -59,7 +59,7 @@ const EducationItem = ({ id, educationItem, onChange, onRemove }) => {
           <input
             type="text"
             name="endDate"
-            placeholder="2009"
+            placeholder="Year"
             value={educationItem.endDate}
             onChange={(e) => onChange(e, id)}
           />

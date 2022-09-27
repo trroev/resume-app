@@ -9,7 +9,7 @@ const ExperienceItem = ({ id, experienceItem, onChange, onRemove }) => {
           <input
             type="text"
             name="position"
-            placeholder="Software Engineer I"
+            placeholder="Position"
             value={experienceItem.position}
             onChange={(e) => onChange(e, id)}
           />
@@ -19,7 +19,7 @@ const ExperienceItem = ({ id, experienceItem, onChange, onRemove }) => {
           <input
             type="text"
             name="company"
-            placeholder="Facebook"
+            placeholder="Company"
             value={experienceItem.company}
             onChange={(e) => onChange(e, id)}
           />
@@ -29,7 +29,7 @@ const ExperienceItem = ({ id, experienceItem, onChange, onRemove }) => {
           <input
             type="text"
             name="location"
-            placeholder="Mountain View, CA"
+            placeholder="City, State"
             value={experienceItem.location}
             onChange={(e) => onChange(e, id)}
           />
@@ -39,7 +39,7 @@ const ExperienceItem = ({ id, experienceItem, onChange, onRemove }) => {
           <input
             type="text"
             name="startDate"
-            placeholder="2010"
+            placeholder="Year"
             value={experienceItem.startDate}
             onChange={(e) => onChange(e, id)}
           />
@@ -49,7 +49,7 @@ const ExperienceItem = ({ id, experienceItem, onChange, onRemove }) => {
           <input
             type="text"
             name="endDate"
-            placeholder="2020"
+            placeholder="Year"
             value={experienceItem.endDate}
             onChange={(e) => onChange(e, id)}
           />

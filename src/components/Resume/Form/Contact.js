@@ -12,7 +12,7 @@ const Contact = ({ contactInfo, onChange }) => {
           <input
             type="text"
             name="location"
-            placeholder="Grand Rapids, MI"
+            placeholder="City, State"
             value={contactInfo.location}
             onChange={(e) => onChange(e)}
           />
@@ -22,7 +22,7 @@ const Contact = ({ contactInfo, onChange }) => {
           <input
             type="text"
             name="phoneNumber"
-            placeholder="269.760.6524"
+            placeholder="xxx.xxx.xxxx"
             value={contactInfo.phoneNumber}
             onChange={(e) => onChange(e)}
           />
@@ -32,7 +32,7 @@ const Contact = ({ contactInfo, onChange }) => {
           <input
             type="email"
             name="email"
-            placeholder="tmathiak@gmail.com"
+            placeholder="you@email.com"
             value={contactInfo.email}
             onChange={(e) => onChange(e)}
           />
@@ -42,7 +42,7 @@ const Contact = ({ contactInfo, onChange }) => {
           <input
             type="text"
             name="website"
-            placeholder="www.trevormathiak.dev"
+            placeholder="www.yourwebsite.com"
             value={contactInfo.website}
             onChange={(e) => onChange(e)}
           />
@@ -52,7 +52,7 @@ const Contact = ({ contactInfo, onChange }) => {
           <input
             type="text"
             name="linkedin"
-            placeholder="https://www.linkedin.com/in/trevormathiak"
+            placeholder="https://www.linkedin.com/in/username"
             value={contactInfo.linkedin}
             onChange={(e) => onChange(e)}
           />
@@ -62,7 +62,7 @@ const Contact = ({ contactInfo, onChange }) => {
           <input
             type="text"
             name="github"
-            placeholder="https://github.com/trroev"
+            placeholder="https://github.com/username"
             value={contactInfo.github}
             onChange={(e) => onChange(e)}
           />
